@@ -5,7 +5,7 @@ GovJobs Online is a web-based platform designed to help South African citizens e
 
 ---
 
-## 🚀 Features
+##  Features
 
 - 🧾 Browse public sector job listings
 - ✍️ Complete and submit the Z83 application form online
@@ -16,14 +16,14 @@ GovJobs Online is a web-based platform designed to help South African citizens e
 
 ---
 
-## 🛠️ Tech Stack
+## Technologies
 
 ### Frontend:
 - HTML, CSS, JavaScript (or React)
 
 ### Backend:
 - Node.js + Express.js
-- MongoDB with Mongoose
+- Microsoft Azure SQL Database
 - JWT for authentication
 - Bcrypt for password hashing
 - Multer (for file uploads)
