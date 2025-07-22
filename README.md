@@ -29,6 +29,9 @@ GovJobs Online is a web-based platform designed to help South African citizens e
 - Multer (for file uploads)
 
 ---
+📄 License
+This project was created as part of a student assignment. All rights reserved.
+© 2025 GovJobs Online. Not affiliated with the South African government.
 
 
 
