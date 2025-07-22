@@ -27,6 +27,7 @@ GovJobs Online is a web-based platform designed to help South African citizens e
 - JWT for authentication
 - Bcrypt for password hashing
 - Multer (for file uploads)
+- MFA (OTP)
 
 ---
 📄 License
