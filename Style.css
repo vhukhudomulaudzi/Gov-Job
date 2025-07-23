@@ -48,6 +48,8 @@ footer li {
 .custom-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+h1{text-align: center;}
     
 h2 {
     text-align: center;
