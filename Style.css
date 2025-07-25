@@ -21,14 +21,15 @@
 .hero h1{
    font-weight: bold;
     color: rgb(2, 64, 31);
+    margin-top: 20px;
 }
 .hero p{ 
-    font-style: italic;
+    font-weight: lighter;
 }
 footer {
   background-color: #02683e;
   color: white;
-  padding: 30px 0;
+  
   margin-top: 50px;
 }
 footer p { 
@@ -97,3 +98,4 @@ button{
     .footer {
       margin-top: 280px;
     }
+    
