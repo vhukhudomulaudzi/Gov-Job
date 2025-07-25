@@ -41,8 +41,12 @@ footer ul {
 }
 
 footer li {
-    text-align: center;
+  text-align: center;
   margin: 10px;
+}
+
+footer ul a {
+  text-decoration: underline;
 }
 
 .custom-shadow {
@@ -148,4 +152,4 @@ button{
       color: white;
       border: none;
       cursor: pointer;
-        border-radius: 4px}
+      border-radius: 4px}
