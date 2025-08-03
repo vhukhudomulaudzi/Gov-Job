@@ -18,6 +18,7 @@
 .hero{
     text-align: center;
 }
+
 .hero h1{
    font-weight: bold;
     color: rgb(2, 64, 31);
@@ -43,13 +44,20 @@ footer ul {
 }
 
 footer li {
-    text-align: center;
+  text-align: center;
   margin: 10px;
+}
+
+footer ul a {
+  text-decoration: underline;
+  color:  #0000FF;;
 }
 
 .custom-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+h1{text-align: center;}
     
 h2 {
     text-align: center;
