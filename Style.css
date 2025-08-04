@@ -53,7 +53,8 @@ footer ul a {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1{text-align: center;}
+h1{text-align: center;
+color: rgb(2, 64, 31);}
     
 h2 {
     text-align: center;
@@ -153,3 +154,65 @@ button{
       border: none;
       cursor: pointer;
       border-radius: 4px}
+
+/* ===== DASHBOARD STYLES (Admin & Job Seeker) ===== */
+
+/* Page Background and Layout */
+.dashboard-page {
+  background-color: #f4f7f9;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header */
+.dashboard-page h1 {
+  color: #043c25;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Navigation Bar inside Dashboard */
+.dashboard-nav {
+  background-color: #075e3c;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard-nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dashboard-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Box */
+.dashboard-section {
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section Title */
+.dashboard-section h2 {
+  color: #043c25;
+  margin-top: 0;
+}
+
+/* Optional Card Style (for dashboard widgets) */
+.dashboard-card {
+  background-color: #e8f5e9;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #2e7d32;
+  border-radius: 5px;
+}

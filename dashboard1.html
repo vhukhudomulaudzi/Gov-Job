@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>government job application portal</title>
-
-  <!-- Bootstrap CSS via CDN -->
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <!-- Custom CSS (optional) -->
   <link rel="stylesheet" href="Style.css" />
 </head>
-<body>
-     <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+<body class="dashboard-page">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="Images/gov.webp" alt="Logo" width="70" height="70">
       </a>
+      <!--navbar toggler makes the button look like a hamburger icon used in responsive navbars.-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav"><!---Makes the navigation bar to be responsive on all devices-->
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
-          <li class="nav-item"><a class="nav-link" href="Z83.html">Z83</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Application Review</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Post Jobs</a></li>
           <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="mainlogin.html">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <br>
-  <div class="container my-5 text-center ">
-  <h1>CONTACT US </h1><br>
-  <ul class="list-unstyled">
-    <li>Contact numbers : 011 289 3455</li><br>
-    <li>Email :  sagovjobs@outlook.com.</li>
-  </ul>
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <h1>WELCOME ADMIN</h1>
+  <section class="dashboard-section">
+    <h2>Dashboard Overview</h2>
+
+    <div class="dashboard-card">
+      <p><strong>Total Jobs Posted:</strong> 25</p>
+    </div>
+
+    <div class="dashboard-card">
+      <p><strong>Pending Applications:</strong> 143</p>
+    </div>
+
+    <div class="dashboard-card">
+      <p><strong>New Reports:</strong> 5</p>
+    </div>
+  </section>
   <footer >
+    
       <ul >
         <li><a href="about.html">About</a></li>
         <li><a href="contacts.html">Contacts</a></li>
-        <li><a href="privacy.html" >Privacy Policy</a></li>
-        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        
+        
       </ul>
       <p> &copy; 2025 Government Job Application Portal </p>
     
   </footer>
+  <!--Content Delivery Network which Bootstrap stores files online for javascript.-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
 </body>
 </html>
