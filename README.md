@@ -23,6 +23,7 @@ GovJobs Online is a web-based platform designed to help South African citizens e
 
 ### Backend:
 - Node.js + Express.js
+- C#
 - Microsoft Azure SQL Database
 - JWT for authentication
 - Bcrypt for password hashing

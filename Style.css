@@ -22,12 +22,16 @@
 .hero h1{
    font-weight: bold;
     color: rgb(2, 64, 31);
+    margin-top: 20px;
+}
+.hero p{ 
+    font-weight: lighter;
 }
 
 footer {
   background-color: #02683e;
   color: white;
-  padding: 30px 0;
+  
   margin-top: 50px;
 }
 footer p { 
@@ -101,8 +105,15 @@ button{
       background-color: #035b29;
       color: white;
     }
+    .footer {
+      margin-top: 280px;
+    }
 
-  /* Search Section */
+ .btn-toggle.active {
+      background-color: #035b29;
+      color: white;
+    }
+
     .search-section {
       display: flex;
       justify-content: center;
@@ -124,7 +135,6 @@ button{
       cursor: pointer;
     }
 
-    /* Job Cards Layout */
     .job-container {
       display: flex;
       justify-content: center;
