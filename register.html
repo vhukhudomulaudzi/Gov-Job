@@ -113,39 +113,5 @@
   </script>
   
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Firebase App (core) -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyBpHxAngwebC1v43a9yqSu8xZZ_p0_ejxU",
-    authDomain: "gov-jobs-86916.firebaseapp.com",
-    projectId: "gov-jobs-86916",
-    storageBucket: "gov-jobs-86916.appspot.com",
-    messagingSenderId: "939671850498",
-    appId: "1:939671850498:web:63b1df98513021fe47a11b"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-
-  // Register logic
-  window.registerHR = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        alert("Registration successful!");
-        window.location.href = "dashboard1.html"; // 👈 Redirect to HR dashboard
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
-  };
-</script>
-
-
 </body>
 </html>
