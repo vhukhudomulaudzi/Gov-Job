@@ -29,9 +29,9 @@
 }
 
 footer {
-  background-color: #02683e;
+   background-color: #02683e;
   color: white;
-  
+  padding: 30px 0;
   margin-top: 50px;
 }
 footer p { 
@@ -58,8 +58,7 @@ footer a:hover{color:rgb(20, 208, 108) ;}
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1{text-align: center;
-color: rgb(2, 64, 31);}
+h1{text-align: center;}
     
 h2 {
     text-align: center;
@@ -114,6 +113,8 @@ button{
       background-color: #035b29;
       color: white;
     }
+  
+    /* Jobs css*/
 
   /* Jobs Styling*/
 
@@ -143,7 +144,7 @@ button{
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
-      padding: 20px;
+      padding: 50px;
     }
 
     .job-card {
@@ -168,64 +169,182 @@ button{
       cursor: pointer;
       border-radius: 4px}
 
-/* ===== DASHBOARD STYLES (Admin & Job Seeker) ===== */
+/* Applications css*/
 
-/* Page Background and Layout */
-.dashboard-page {
-  background-color: #f4f7f9;
-  min-height: 100vh;
-  padding-bottom: 50px;
-}
+/* Container for all applications */
 
-/* Header */
-.dashboard-page h1 {
-  color: #043c25;
-  font-weight: bold;
+.applications{
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  margin: 0;
-  text-align: center;
-}
-
-/* Navigation Bar inside Dashboard */
-.dashboard-nav {
-  background-color: #075e3c;
-  padding: 10px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
 }
 
-.dashboard-nav a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+/* Individual application cards */
+.application-card {
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  transition: box-shadow 0.3s ease;
 }
 
-.dashboard-nav a:hover {
-  text-decoration: underline;
+.application-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Section Box */
-.dashboard-section {
-  max-width: 900px;
-  background-color: white;
-  padding: 30px;
-  margin: 30px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ 
+/* Left side content */
+.card-content {
+  flex: 1;
 }
 
-/* Section Title */
-.dashboard-section h2 {
-  color: #043c25;
-  margin-top: 0;
+.card-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  color: #2d5a3d;
+  font-weight: 600;
 }
 
-/* Optional Card Style (for dashboard widgets) */
-.dashboard-card {
-  background-color: #e8f5e9;
-  padding: 20px;
-  margin: 15px 0;
-  border-left: 5px solid #2e7d32;
-  border-radius: 5px;
+.card-content p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-content p strong {
+  color: #333;
+}
+
+/* Right side buttons and status */
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Status badges */
+.status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Status colors */
+.status.submitted {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.status.review {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.status.rejected {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 80px;
+}
+
+/* View button - gray */
+.action-buttons button:first-child {
+  background-color: #9ca3af;
+  color: #fff;
+}
+
+.action-buttons button:first-child:hover {
+  background-color: #6b7280;
+}
+
+/* Withdraw button - darker gray */
+.action-buttons button:last-child {
+  background-color: #6b7280;
+  color: #fff;
+}
+
+.action-buttons button:last-child:hover {
+  background-color: #4b5563;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .job-container {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .application-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .card-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .action-buttons {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  .status {
+    min-width: 90px;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  
+  .action-buttons button {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .action-buttons {
+    justify-content: center;
+  }
+  
+  .status {
+    text-align: center;
+  }
 }
