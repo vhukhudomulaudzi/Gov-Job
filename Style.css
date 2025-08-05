@@ -76,6 +76,9 @@ a{
 button{ 
     background-color: #02683e;
     color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(44, 113, 1, 0.696);
+}
 }
 /* login css*/
 .auth-card {
