@@ -139,6 +139,12 @@ footer ul {
   justify-content: center;
 }
 
+footer ul a {
+  color: white;
+}
+
+footer a:hover{color:rgb(20, 208, 108) ;}
+
 footer li {
     text-align: center;
   margin: 10px;
