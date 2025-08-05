@@ -49,9 +49,10 @@ footer li {
 }
 
 footer ul a {
-  text-decoration: underline;
-  color:  #0000FF;;
+  color: white;
 }
+
+footer a:hover{color:rgb(20, 208, 108) ;}
 
 .custom-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
