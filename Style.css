@@ -298,6 +298,27 @@ button{
   background-color: #4b5563;
 }
 
+/* Accordion toggle symbol (plus and minus) */
+.accordion-button::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #02683e;
+  background-image: none !important;
+  transform: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "−"; /* minus sign when expanded */
+}
+
+/* Change background color when accordion is open */
+.accordion-button:not(.collapsed) {
+  background-color:  #129860; 
+  color: #000;
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .job-container {
